@@ -1,0 +1,12 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#config, #splash-screen, #players-screen, #selection-screen, #question-screen {
+    padding: 20px;
+}
+
+button {
+    margin: 5px;
+}
