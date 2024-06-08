@@ -1,13 +1,26 @@
 import React from 'react';
 
-const SelectionScreen = ({ onSelectQuestion }) => {
-    const questions = JSON.parse(localStorage.getItem('questions')) || [];
-
+const SelectionScreen = ({ questions, players, onSelectQuestion }) => {
     return (
-        <div id="selection-screen">
-            {questions.map((question, index) => (
-                <button key={index} onClick={() => onSelectQuestion(index)}>Question {index + 1}</button>
-            ))}
+        <div className="selection-screen">
+            <h2>Selection Screen</h2>
+            <ul>
+                {questions.map((question, index) => (
+                    <li key={index}>
+                        <button onClick={() => onSelectQuestion(question)}>
+                            {question.revealed ? question.question : 'Mystery Question!'}
+                        </button>
+                    </li>
+                ))}
+            </ul>
+            <h3>Player Stats</h3>
+            <ul>
+                {players.map((player, index) => (
+                    <li key={index}>
+                        {player.name}: {player.points} points
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };

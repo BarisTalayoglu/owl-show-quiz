@@ -1,12 +1,127 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#config, #splash-screen, #players-screen, #selection-screen, #question-screen {
+.app {
+    text-align: center;
+    background-color: #3b3f45;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
     padding: 20px;
 }
 
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 button {
-    margin: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+.splash-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+.splash-screen img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.splash-screen h1 {
+    color: #61dafb;
+    font-size: 3em;
+}
+
+.configuration-screen label,
+.configuration-screen input {
+    display: block;
+    margin: 10px 0;
+}
+
+.players-screen ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.players-screen li {
+    background-color: #444950;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.question-screen input[type="text"] {
+    margin-bottom: 10px;
+}
+
+.winner-screen {
+    padding: 20px;
+}
+
+.winner-screen ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.winner-screen li {
+    background-color: #444950;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
 }

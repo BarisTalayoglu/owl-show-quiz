@@ -1,5 +1,5 @@
 {
-  "name": "owlshowquizapp",
+  "name": "simple-webpack-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,17 +8,18 @@
     "build": "webpack"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-react": "^7.14.5",
-    "babel-loader": "^8.3.0",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.7",
+    "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
-    "css-loader": "^5.2.7"
+    "webpack": "^5.91.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^3.11.3"
   }
 }
